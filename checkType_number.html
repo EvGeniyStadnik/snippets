@@ -5,8 +5,8 @@
     <title>JS</title>
 </head>
 <body contenteditable="true">
+<p>функция Декоратор для проверки типа 'number'</p>
 	<script>
-		 //функция Декоратор для проверки типа 'number'
 		 function isNumeric(n){
 			 return !isNaN(parseFloat(n)) && isFinite(n);
 		 }
@@ -23,7 +23,7 @@
 			 }
 		 }
 		 var arr = [2, 4, 5, 6, 7, 8];
-		 function sum(){
+		 function sum(arr){ //Проверка функции перед выполнением суммирования на тип 'number' аргументов arr
 			 return [].reduce.call(arguments, function(a, b){
 				 return a + b;
 			 });
